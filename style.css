@@ -1,0 +1,337 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(36, 36, 36, 0.5), #272626), url(assets/Images/Netfliximage.jpg);
+    position: relative;
+    padding: 10px 8%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+
+}
+
+nav .logo {
+    width: 160px;
+    height: auto;
+    cursor: pointer;
+
+}
+
+nav .logo img {
+    width: 100%;
+}
+
+ button {
+    border: 0;
+    outline: none;
+    background-color: red;
+    color: white;
+    padding: 6px 15px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 4px;
+    margin-left: 7px;
+    cursor: pointer;
+}
+
+.lang-btn {
+    background: transparent;
+    border: .1px solid #fff;
+}
+
+nav .lang-btn i {
+    margin-left: 10px;
+}
+
+
+.header-text {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    margin-top: 15%;
+}
+
+.header-text h1 {
+    font-size: 50px;
+    line-height: 70px;
+    font-weight: 1000;
+    
+
+}
+
+.header-text h3 {
+    font-size: 22px;
+    line-height: 3;
+}
+
+.header-text p {
+    line-height: 4;
+}
+
+.header-text .email {
+    display: flex;
+    gap: 8px;
+    margin: auto;
+    align-items: center;
+    text-align: ;
+}
+
+.email input {
+    padding: 16px 100px;
+    border: 0;
+    outline: 1px solid grey;
+    background: rgba(36, 36, 36, 0.8);
+    font-size: 15px;
+    text-align: left;
+    font-weight: 600;
+    color: #fff;
+    border-radius: 4px;
+
+
+}
+
+.email button {
+    background-color: red;
+    padding: 14px 30px;
+    border-radius: 4px;
+    border: 0;
+    color: white;
+    font-size: 22px;
+    font-weight: 600;
+
+}
+
+.email button i {
+    margin-left: 8px;
+}
+
+hr {
+    background: #555252;
+    width: 100%;
+    height: 7px;
+    border: 0;
+    outline: 0;
+
+}
+
+.container {
+    width: 100%;
+    padding: 50px 0;
+}
+
+.body-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85%;
+    height: 520px;
+    margin: auto;
+}
+
+
+.text-coln h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.text-coln p {
+    font-size: 20px;
+}
+
+.img-coln {
+    position: relative;
+}
+
+.img-coln img {
+    width: 500px;
+    position: relative;
+    z-index: 1;
+}
+
+.img-coln video {
+    position: absolute;
+    width: 400px;
+    top: 52px;
+    right: 70px;
+
+}
+
+.faq {
+    width: 100%;
+}
+
+.faq h1 {
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.faq .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.faq .row button {
+    padding: 20px 50px;
+    width: 70%;
+    color: #fffdfd;
+    font-size: 22px;
+    font-weight: 500px;
+    background: #535250;
+    text-align: left;
+    margin-bottom: 10px;
+
+}
+
+.faq .row button:hover{
+    background: #6e6c6c;
+}
+
+.faq .row button::after{
+    content: '+';
+    float:  right;
+    font-size: 32px;
+}
+
+.faq-footer .header-text{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+.footer{
+    width: 100%;
+    padding: 50px 12% 20px;
+}
+
+.footer .row{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 50px;
+    padding: 20px 0;
+}
+
+.footer .row .col a{
+    display: block;
+    color: #b1afaf;
+    text-decoration:underline 1px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.footer h4{
+    font-size: 15px;
+    color: #b1afaf;
+    margin-bottom: 40px;
+}
+
+.footer p{
+    color: #b1afaf;
+    margin: 20px 0;
+}
+
+
+@media only screen and (max-width: 900px) and (min-width: 300px){
+
+    header{
+        width: 100%;
+        height: auto;
+    }
+
+    nav .logo{
+        width: 100px;
+    }
+
+    button{
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+
+    .header-text{
+        margin-top: 12%;
+    }
+
+    .header-text h3 , .header-text p{
+    font-size: 18px;
+    }
+
+    .email button{
+        font-size: 16px;
+    }
+
+    .email input{
+        width:  100%;
+    }
+
+    .header-text .email{
+        flex-direction: column;
+    }
+
+    .header-text h1{
+        font-size: 40px;
+    }
+
+
+    
+    .body-section{
+        flex-direction: column;
+        height: auto;
+        padding: 40px 0;
+        text-align: center;
+    }
+
+    .second, .fourth{
+        flex-direction: column-reverse;
+    }
+
+
+    .body-section .text-coln h2{
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+
+    .faq h1{
+        font-size: 32px;
+
+    }
+
+    .faq .row button{
+        width: 90%;
+        font-size: 20px;
+    }
+
+    .faq-footer{
+        width: 80%;
+        margin: auto;
+    }
+
+    .footer .row{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
